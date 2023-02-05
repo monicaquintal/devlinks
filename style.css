@@ -9,9 +9,26 @@ body {
  */
 }
 
+body * {
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
 #container {
   width: 360px;
-  height: 712px;
   border: 2px solid red;
   margin: auto;
+}
+
+#profile {
+  text-align: center;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
 }
