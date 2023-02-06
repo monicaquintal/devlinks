@@ -4,8 +4,26 @@
   box-sizing: border-box;
 } 
 
+:root {
+  --text-color: #FFFFFF;
+  --bg-url: url(./assets/bg-mobile-dark.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+.light {
+  --text-color: #000000;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+}
+
 body {
-  background-image: url(./assets/bg-mobile.jpg);
+  background: var(--bg-url);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -17,7 +35,7 @@ body {
 
 body * {
   font-family: 'Inter', sans-serif;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 #container {
@@ -25,6 +43,8 @@ body * {
   margin: 56px auto 0px;
   padding: 0 24px;
 }
+
+/* profile */
 
 #profile {
   text-align: center;
@@ -60,13 +80,12 @@ ul li a {
 
   padding: 16px 24px;
 
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
   border-radius: 8px;
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  -moz-background-filter: blur(4px);
 
   font-weight: 500;
   text-decoration: none;
@@ -75,8 +94,8 @@ ul li a {
 }
 
 ul li a:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid #FFFFFF;
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
 }
 
 #social-links {
@@ -99,7 +118,7 @@ ul li a:hover {
 }
 
 #social-links a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--highlight-color);
 }
 
 footer {
@@ -109,5 +128,5 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: var(--text-color);
 }
