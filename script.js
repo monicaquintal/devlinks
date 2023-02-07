@@ -1,6 +1,5 @@
-// 
-
 function toggleMode() {
+
   // light/dark mode
   const html = document.documentElement;
   html.classList.toggle('light'); // equivale à lógica abaixo:
@@ -11,7 +10,6 @@ function toggleMode() {
   //   html.classList.add('light');
   // }
 
-  
   // alterando o avatar
   const img = document.querySelector("#profile img");
 

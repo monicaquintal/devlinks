@@ -31,7 +31,7 @@ O DevLinks é um agregador de links para usar como cartão de visitas online.
 
 [Figma do Projeto](https://www.figma.com/community/file/1187422022288947321).
 
-## 💭 Repositório
+## 💭 Repositorio
 
 ~~~
 // inicia o git (repositório) no projeto:
