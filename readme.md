@@ -3,7 +3,8 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-repositorio">Git e GitHub</a>
 </p>
 <br>
 
@@ -30,3 +31,18 @@ O DevLinks é um agregador de links para usar como cartão de visitas online.
 
 [Figma do Projeto](https://www.figma.com/community/file/1187422022288947321).
 
+## 💭 Repositório
+
+~~~
+// inicia o git (repositório) no projeto:
+git init
+
+// adiciona todos os arquivos modificados ao stage:
+git add .
+
+// cria e descreve um ponto na história:
+git commit -m "message here"
+
+// envia as alterações para o repositório remoto 
+git push 
+~~~
